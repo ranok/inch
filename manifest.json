@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "version": "0.1",
+    "name": "AI Noise-cancelling headphones",
+    "author": "jacob@torrey.io",
+    "description": "An extension to filter out AI-generated noise from your browsing experience",
+
+    "content_scripts": [
+        {
+            "js": ["scripts/nch.js"],
+            "matches": [
+                "https://*.openai.com/*",
+                "https://www.searchenginejournal.com/*",
+                "https://www.readingchronicle.co.uk/*"
+            ]
+        }
+    ]
+
+}
